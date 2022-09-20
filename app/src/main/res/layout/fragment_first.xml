@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE androidx.constraintlayout.widget.ConstraintLayout [<!ELEMENT androidx.constraintlayout.widget.ConstraintLayout (Button|ImageButton|androidx.constraintlayout.widget.Guideline|TextView)*><!ATTLIST androidx.constraintlayout.widget.ConstraintLayoutxmlns:android CDATA #REQUIREDxmlns:app CDATA #REQUIREDxmlns:tools CDATA #REQUIREDandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDtools:context CDATA #REQUIRED><!ELEMENT Button (#PCDATA)><!ATTLIST Buttonandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginBottom CDATA #IMPLIEDandroid:layout_marginEnd CDATA #IMPLIEDandroid:layout_marginLeft CDATA #IMPLIEDandroid:layout_marginRight CDATA #IMPLIEDandroid:layout_marginStart CDATA #IMPLIEDandroid:layout_marginTop CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:text CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #IMPLIEDapp:layout_constraintEnd_toEndOf CDATA #IMPLIEDapp:layout_constraintStart_toStartOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #IMPLIED><!ELEMENT ImageButton (#PCDATA)><!ATTLIST ImageButtonandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginEnd CDATA #IMPLIEDandroid:layout_marginLeft CDATA #IMPLIEDandroid:layout_marginRight CDATA #IMPLIEDandroid:layout_marginStart CDATA #IMPLIEDandroid:layout_marginTop CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:src CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #IMPLIEDapp:layout_constraintBottom_toTopOf CDATA #IMPLIEDapp:layout_constraintEnd_toEndOf CDATA #REQUIREDapp:layout_constraintHorizontal_bias CDATA #IMPLIEDapp:layout_constraintStart_toStartOf CDATA #REQUIREDapp:layout_constraintTop_toBottomOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #IMPLIEDapp:layout_constraintVertical_bias CDATA #IMPLIED><!ELEMENT androidx.constraintlayout.widget.Guideline (#PCDATA)><!ATTLIST androidx.constraintlayout.widget.Guidelineandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:orientation CDATA #REQUIREDapp:layout_constraintGuide_percent CDATA #REQUIRED><!ELEMENT TextView (#PCDATA)><!ATTLIST TextViewandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:text CDATA #REQUIREDandroid:textSize CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #IMPLIEDapp:layout_constraintBottom_toTopOf CDATA #IMPLIEDapp:layout_constraintEnd_toStartOf CDATA #REQUIREDapp:layout_constraintStart_toEndOf CDATA #REQUIREDapp:layout_constraintTop_toBottomOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #IMPLIED>]>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +8,7 @@
     tools:context=".FirstFragment">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnPmas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnPmenos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -30,18 +30,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imgCoraL"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:src="@drawable/ic_baseline_favorite_24"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/imgB1"
+        app:layout_constraintEnd_toEndOf="@+id/btnPmas"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPmas" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -51,11 +51,103 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imgB1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_expand_less_24"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgCoraV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintBottom_toTopOf="@+id/imgB1"
+        app:layout_constraintEnd_toEndOf="@+id/btnPmenos"
+        app:layout_constraintStart_toStartOf="@+id/btnPmenos"
+        app:layout_constraintTop_toBottomOf="@+id/btnPmenos" />
+
+    <ImageButton
+        android:id="@+id/imgB2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgCoraL2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintBottom_toTopOf="@+id/btnPmas2"
+        app:layout_constraintEnd_toEndOf="@+id/btnPmas2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgB2"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintBottom_toTopOf="@+id/btnPmenos2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnPmenos2"
+        app:layout_constraintTop_toBottomOf="@+id/imgB2" />
+
+    <Button
+        android:id="@+id/btnPmas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="P+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPmenos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="P-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgB1"
+        app:layout_constraintEnd_toStartOf="@+id/imgCoraV"
+        app:layout_constraintStart_toEndOf="@+id/imgCoraL"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/imgCoraL2"
+        app:layout_constraintTop_toBottomOf="@+id/imgB2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
