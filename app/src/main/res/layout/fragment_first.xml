@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE androidx.constraintlayout.widget.ConstraintLayout [<!ELEMENT androidx.constraintlayout.widget.ConstraintLayout (Button|ImageButton|androidx.constraintlayout.widget.Guideline|TextView)*><!ATTLIST androidx.constraintlayout.widget.ConstraintLayoutxmlns:android CDATA #REQUIREDxmlns:app CDATA #REQUIREDxmlns:tools CDATA #REQUIREDandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDtools:context CDATA #REQUIRED><!ELEMENT Button (#PCDATA)><!ATTLIST Buttonandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginBottom CDATA #IMPLIEDandroid:layout_marginEnd CDATA #IMPLIEDandroid:layout_marginLeft CDATA #IMPLIEDandroid:layout_marginRight CDATA #IMPLIEDandroid:layout_marginStart CDATA #IMPLIEDandroid:layout_marginTop CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:text CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #IMPLIEDapp:layout_constraintEnd_toEndOf CDATA #IMPLIEDapp:layout_constraintStart_toStartOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #IMPLIED><!ELEMENT ImageButton (#PCDATA)><!ATTLIST ImageButtonandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginEnd CDATA #IMPLIEDandroid:layout_marginLeft CDATA #IMPLIEDandroid:layout_marginRight CDATA #IMPLIEDandroid:layout_marginStart CDATA #IMPLIEDandroid:layout_marginTop CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:src CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #IMPLIEDapp:layout_constraintBottom_toTopOf CDATA #IMPLIEDapp:layout_constraintEnd_toEndOf CDATA #REQUIREDapp:layout_constraintHorizontal_bias CDATA #IMPLIEDapp:layout_constraintStart_toStartOf CDATA #REQUIREDapp:layout_constraintTop_toBottomOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #IMPLIEDapp:layout_constraintVertical_bias CDATA #IMPLIED><!ELEMENT androidx.constraintlayout.widget.Guideline (#PCDATA)><!ATTLIST androidx.constraintlayout.widget.Guidelineandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:orientation CDATA #REQUIREDapp:layout_constraintGuide_percent CDATA #REQUIRED><!ELEMENT TextView (#PCDATA)><!ATTLIST TextViewandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:text CDATA #REQUIREDandroid:textSize CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #IMPLIEDapp:layout_constraintBottom_toTopOf CDATA #IMPLIEDapp:layout_constraintEnd_toStartOf CDATA #REQUIREDapp:layout_constraintStart_toEndOf CDATA #REQUIREDapp:layout_constraintTop_toBottomOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #IMPLIED>]>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,6 +17,8 @@
         android:text="P+"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
         android:id="@+id/btnPmenos"
@@ -96,7 +98,7 @@
         app:layout_constraintVertical_bias="0.24" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imgCoraV2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="4dp"
@@ -147,7 +149,7 @@
         android:text="20/0"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/imgCoraV2"
         app:layout_constraintStart_toEndOf="@+id/imgCoraL2"
         app:layout_constraintTop_toBottomOf="@+id/imgB2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
