@@ -144,6 +144,13 @@ public class FirstFragment extends Fragment {
     }
 
 
+    public void onSaveInstanceState(Bundle outState){
+        outState.putInt("vida1", vida1);
+        outState.putInt("vida2", vida2);
+        outState.putInt("veneno1", veneno1);
+        outState.putInt("veneno2", veneno2);
+
+    }
     @Override
     public void onDestroyView() {
         super.onDestroyView();
